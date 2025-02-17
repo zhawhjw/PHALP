@@ -30,7 +30,7 @@ setup(
             "pytube @ git+https://github.com/pytube/pytube.git",
             "pyopengl @ git+https://github.com/mmatl/pyopengl.git",
             "chumpy @ git+https://github.com/mattloper/chumpy", # smplx dependency
-            "neural-renderer-pytorch @ git+https://github.com/shubham-goel/NMR.git",
+            "neural-renderer-pytorch @ git+https://github.com/zhawhjw/NMR.git",
         ],
     extras_require={
         'all': [
