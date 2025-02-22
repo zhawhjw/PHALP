@@ -24,7 +24,7 @@ setup(
             "hydra-core",
             "timm",
             "av",
-            "smplx==0.1.28",
+            "smplx @ git+https://github.com/zhawhjw/smplx.git",
             "numpy",
             "detectron2 @ git+https://github.com/facebookresearch/detectron2.git",
             "pytube @ git+https://github.com/pytube/pytube.git",
