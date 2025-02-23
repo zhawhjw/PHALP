@@ -653,8 +653,9 @@ class PHALP(nn.Module):
         if not os.path.exists(smpl_path):
             # We are downloading the SMPL model here for convenience. Please accept the license
             # agreement on the SMPL website: https://smpl.is.tue.mpg.
+            address = 'https://huggingface.co/spaces/brjathu/HMR2.0/raw/e5201da358ccbc04f4a5c4450a302fcb9de571dd/data/smpl/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl'
             os.makedirs(os.path.join(CACHE_DIR, "phalp/3D/models/smpl"), exist_ok=True)
-            os.system('wget https://github.com/classner/up/raw/master/models/3D/basicModel_neutral_lbs_10_207_0_v1.0.0.pkl')
+            os.system('wget ' + address)
 
             convert_pkl('basicModel_neutral_lbs_10_207_0_v1.0.0.pkl')
             os.system('rm basicModel_neutral_lbs_10_207_0_v1.0.0.pkl')
